@@ -1,0 +1,40 @@
+<div class = "container">
+<h1>Sinatra Sandbox</h1>
+
+<b>Wanna get cooler? Tell us your cool name!</b>
+
+<form action="/cool_url" method="get">
+  <input type="text" name="user_input" placeholder="Insert a value"><br>
+  <p>Which is cooler, food or drinks?</p>
+  <input type="radio" name="options" value="food">Food
+  <input type="radio" name="options" value="drinks" checked>Drinks<br>
+  <p>Don't just act cool, look cool too! Choose cool car or clothes or both(lol):</p>
+  <input type="checkbox" name="checkbox[option1]" value ="cars" checked>Cars<br><br>
+  <input type="checkbox" name="checkbox[option2]" value ="clothes">Clothes<br><br>
+  <input type="submit" value="Say It!"></br>
+</form>
+<br>
+-----------------------------------------------------------<br>
+
+<b> or smarter?</b>
+<p>
+<form action="/cool_url" method="post">
+  <input type="text" name="user_input" placeholder="Tell us why you are smart">
+  <p>What makes you smarter</p>
+  <select>
+    <option value="books">Books</option>
+  <option value="tv">TV</option>
+  <option value="games">Games</option>
+  <option value="sports">Sports</option>
+  </select>
+  <br>
+  <p>Tell us your name</p>
+  <input type="text" name="post[title]"><br>
+  <p>Tell us your email:</p>
+<input type="text" name="post[email]"><br>
+<p>Want you want to say?</p>
+<textarea name="post[description]"></textarea>
+  <p><input type="submit" value="tell us la bro"></p>
+</form>
+</p>
+</div>

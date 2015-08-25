@@ -1,0 +1,10 @@
+<div class="container">
+<h2>Hey <%= @input %> ! </h2>
+<h2>You think you are cool enough?</h2>
+<p>You loves <b><%= @radio %></b> and 
+  <u><% @checked.each do |print| %>
+    <%= print[1] %>
+    <% end %>
+  </u></p>
+<b>GET IT GOOO! GET IT GOOOOO!</b>
+</div>
